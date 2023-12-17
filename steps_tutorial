@@ -1,0 +1,220 @@
+first go to setting and write name of app in installed app
+
+to make website you need url-->to point to a view
+view --> to handle request and pass the hypertext file
+page-->at last the final output page
+
+
+lect 4
+Now we have to deal with the databases so we
+ will go through admin section of Django but it
+doesn't allow direct access so we have to
+  create a super user so what we will do
+  is that we will exit our server and we
+   will get back to the git bash and write
+  these codes:-
+
+python manage.py migrate
+ python manage.py createsuperuser
+username:what ever you want>> admin
+password:>> 1234
+
+database stuff is done in model.py
+
+after creating database
+we will go to admin.py
+
+after admin autherity we need to push the database into django/admin databases
+>>
+python manage.py makemigrations
+python manage.py migrate
+
+lect 5-->
+how to fetch the database data onto main screen
+
+majority use of models.py
+and migration file initial.py
+and event_list.py
+
+
+lect 6--> modify the django admin area
+
+If you make any changes
+in the model for example making a feature not
+mandatory after declaring you have to migrate
+these modelsas per above codes
+
+
+if i want to make admin as manager then
+i have to delete all my events then
+in models.py use auth in django.contrib
+
+make manager as User and on delete set null
+
+
+lect 7-->
+how to add database form to a web page
+
+make a forms.py file and import some elements
+from django import forms
+from django.forms import ModelForm
+
+
+lect 8 -->
+
+query database from venues
+making a small page for each venue (individually)
+
+lect 9-->
+adding a search bar in Django
+
+in search_venue.html
+
+lect 10 -->
+
+now we will try to update the venues data
+look for model.py it need to be accurate
+
+lect 11 -->
+add event in our page
+
+lect 12-->
+create an update event page
+
+
+lect 13 -->
+ deleting items from databases
+
+ lect 14 -->
+ ordering items from databases
+
+ lect 15 -->
+ generate text files dynamically
+
+ lect 16 -->
+ generating csv file dynamically
+
+ lect 17 -->
+ generating pdf file dynamically
+ (not done)
+
+lect 18 -->
+pagination
+
+lect 19 -->
+styling pagination with bootstrap
+
+lect 20 -->
+cutomizing django admin titles
+
+open the urls of the parent file make changes below urlpatterns
+
+lect 21 -->
+login with user authenication
+
+4 login purpose we will create a new app known as members
+
+lect 22 -->
+login out with user authenication
+views.py of new app
+
+I don't want him to see the login tab so I will be making some
+logic of only showing logout not login page
+
+lect 23 -->
+navbar dropdown menus
+
+lect 24-->
+
+registering user
+
+using django.contrib.auth.forms import UserCreationForm
+
+then moving to navbar for {% if statement below}
+we have used login in views and register user but even after that
+the user is not a superuser as per admin
+
+lect 25 -->
+add extra registration fields
+
+lect 26 -->
+stying django registration form
+
+Styling django's registration form is a bit difficult task because
+ we have generated the registration form via django imported files
+
+lect 27 -->
+lock down app
+
+Here we are basically setting some restrictions to only authorize user to make changes
+
+lect 28 -->
+determine correct user to Edit events
+
+Here we will try to authenticate that even if you are admin the event
+ is created by Tim so he only can delete or update the event
+
+ (There is an error if I enter as the valid user and try to change the manager it does not allow me to change the
+  manager because user equals to equals to manager there is some logic behind this)
+
+lect 29 -->
+how to add owner to Venue
+
+lect 30 -->
+use different froms for diffrent users
+( if you're just a regular user you don't want to
+ be able to create an event and assign somebody else that they manage you want
+ you to be the man so if you're logged in as a regular user we don't want this
+ dropdown box to be here we just want no box at all we just want to automatically
+ assign you as the managerbut if you're the invent of the super user we do want
+ this so what we need here is two different forms because this is all done on the
+ back end we can't modify these forms on the html page themselves we're going to have
+ to use different forms and then determine whether or not we want to use the admin form
+ or the regular form and put that form on the)
+
+ lect 31 -->
+
+ only the correct user can delete an events
+ It's a back end thing where the user can identify
+ the name of the event and within the URL it
+ can set the event id and delete so we have to make it authorizedand deal with it
+
+lect 32-->*************************************
+access Venue Owner showling all the enlister items
+
+lect 33-->
+search Events
+
+lect 38 -->**********************************8
+adding images to the events
+
+for this we will make some changess in setting then in model and then
+we will migarte it
+first we have to install
+pip install pillow==8.0.0
+
+
+lect 39 --> ****************
+edit uploaded image
+
+lect 40-->***********
+adding a calcuated field to the venue like(3 days to go type)
+
+
+lect 42 -->*************
+event approval
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+events -- > rooms
