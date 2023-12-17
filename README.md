@@ -1,4 +1,4 @@
-========================= SCREENSHOTS OF THE WEBSITE =================================================================
+======== SCREENSHOTS OF THE WEBSITE =============
 ![image](https://github.com/prajwalganvir/my_club_Django/assets/109936069/f4d9fcd7-a7d0-45a9-972c-9ba9ea89087b)
 ![image](https://github.com/prajwalganvir/my_club_Django/assets/109936069/194786a6-8277-45d8-ba45-17b955293ee9)
 ![image](https://github.com/prajwalganvir/my_club_Django/assets/109936069/0754cdeb-6030-4daf-b2bd-939bbbf4012c)
